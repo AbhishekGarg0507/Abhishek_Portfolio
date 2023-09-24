@@ -21,7 +21,7 @@ html,body{
 
 }
 #loader{
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100%;
   z-index: 69;
@@ -90,24 +90,20 @@ html,body{
   z-index: 60;
   bottom: 0;
   background: #dfd5a9;
-  background-image: url("data:image/svg+xml,%3C!-- svg: first layer --%3E%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3C!-- svg: first layer --%3E%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); */
 }
 
 .home{
-  position: absolute;
   border: 10px solid #111;
+  position: absolute;
   /* height: 200vh; */
   width: 100%;
   /* z-index:61; */
-
   background-color: #dfd5a9
 }
 .home-content{
   line-height: 150px;
   margin-top: 50px;
-}
-section{
-  min-height: 100vh;
 }
 .lineBox{
   position: relative;
@@ -119,8 +115,8 @@ section{
   position: absolute;
   top: 1%;
   left: 3%;
-  height: 60px;
-  width: 27px;
+  height: 5vw;
+  width: 2vw;
   z-index: 999;
   background-color: #842029;
 }
@@ -128,7 +124,7 @@ section{
   position: absolute;
   top: 1%;
   left: 5%;
-  height: 24px;
+  height: 2vw;
   width: 3px;
   z-index: 999;
   background-color: #842029;
@@ -137,38 +133,19 @@ section{
   position: absolute;
   top: 1%;
   left: 5.1%;
-  height: 60px;
-  width: 25px;
+  height: 5vw;
+  width: 2vw;
   z-index: 999;
   background-color: #842029;
 }
-.block3{
-  position: absolute;
-  top: 2%;
-  left: 7.05%;
-  height: 27px;
-  width: 27px;
-  z-index: 999;
-  /* border-radius: 0 5px 5px 0; */
-  background-color: #842029;
-}
-.block4{
-  position: absolute;
-  top: 2.2%;
-  left: 7.5%;
-  height: 14px;
-  width: 2px;
-  z-index: 999;
-  rotate: 90deg;
-  background-color: #dfd5a9;
-}
+
 
 /* logo end */
 
 .navBar{
   position: absolute;
-  top: 11%;
-  left: -6.4%;
+  top: 20%;
+  left: -8.8%;
   z-index: 222;
   rotate: -90deg;
   /* border:1px solid red; */
@@ -176,57 +153,49 @@ section{
   display: inline-block;
 }
 .navBar a{
-  margin-left:25px;
+  margin-left:55px;
   color: #842029;
-  font-size: 1vw;
+  font-size: 1.3vw;
   font-weight: 600;
   text-decoration: none;
 }
 
-
-
 /* navbar end */
-#HomeSection .row{
-  display: flex;
-}
+
 #HomeSection .row h1 {
   font-size: 11vw;
-  /* margin-top: 90px; */
-  /* margin-top: -65px; */
+  margin-top: -7%;
   margin-left: 9%;
-  font-weight: 500;
+  font-weight: 600;
   color: #111;
-  /* z-index: 1; */
-  /* letter-spacing: 15px; */
   display: inline-block;
-  /* background-color: red; */
+  letter-spacing: 5px;
 }
 
 .text{
   display: inline-block;
-  margin-left: 11%;
+  margin-left: 66%;
   opacity: .3;
-  font-size: 13px;
+  font-size: 1vw;
   text-transform: uppercase;
-  width: 200px;
+  width: 14vw;
   line-height: 15px;
 } 
 .text1{
-  display: inline-block;
   text-align: end;
   margin-left: 80%;
   margin-top: 8%;
   opacity: .3;
-  font-size: 13px;
+  font-size: 1vw;
   text-transform: uppercase;
-  width: 200px;
-  line-height: 15px;
+  width: 14vw;
 } 
 #HomeSection .row1 h1 {
   font-size: 11vw;
   /* justify-content: center; */
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 28%;
+  letter-spacing: 5px;
   /* color:#dfd5a9; */
   /* margin-top: -10px; */
   /* background-color:#8420288a; */
@@ -235,11 +204,11 @@ section{
 #HomeSection .o-letter {
   font-family: 'Megrim', cursive;
   font-family: 'Qwitcher Grypen', cursive;
-  font-size: 20vw;
+  font-size: 22vw;
   color: #842029;
 }
 .arrow svg{
-  height: 100px;
+  height: 10vw;
   margin-left: 9.5vw;
   opacity: .3;
 }
@@ -304,64 +273,8 @@ path,polyline{
 }
 /* vertical line end */
 
-/* this is for the scroll hading of the sections */
-#scroll{
-  /* top: 5%; */
-  position: absolute;
-  width: 100%;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-#scroll::-webkit-scrollbar{
-  display: none;
-}
-#scroll h1{
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 80px;
-  font-weight: 800;
-  /* letter-spacing: 15px; */
-  margin-right: 30px;
-  animation-name: scroll;
-  animation-duration: 5s;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
-  animation-timing-function:linear;
-  -webkit-text-stroke-color: #000;
-  -webkit-text-stroke-width: 2px;
-  color: transparent;
-}
-#scroll2{
-  /* top: 8%; */
-  position: absolute;
-  width: 100%;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-#scroll2::-webkit-scrollbar{
-  display: none;
-}
-#scroll2 h1{
-  margin-top: 15px;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 80px;
-  font-weight: 800;
-  letter-spacing: 15px;
-  margin-right: 30px;
-  animation-name: scroll;
-  animation-duration: 8s;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  animation-iteration-count: infinite;
-  animation-timing-function:linear;
-  
-}
-
 .box2{
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 7%;
 }
 .box2 p{
@@ -505,45 +418,98 @@ path,polyline{
     transform: translateX(0);
   }
 }
+@media only screen and (max-width: 1023px){
 
-@media only screen and (max-width: 949px){
+}
+@media only screen and (max-width: 950px){
     .navBar{
-      left: -10.3%;
+      left: -11.6%;
     }
-    .navBar a {
-      margin-left: 18px;
-      font-size: 15px;
-      font-weight: 500;
-    }
-
     .block2 {
-      left: 5.2%;
-      width: 13px;
+      top:2%;
+      left: 5.1%;
+      width: 18px;
+    }
+    .block1{
+      top:2%;
+      left: 4.8%;
+      /* width:10px; */
     }
     .block {
-      left: 3.5%;
-      width: 13px;
+      top:2%;
+      left: 3%;
+      width: 18px;
     }
     #HomeSection .row h1 {
-      font-size: 13vw;
-      margin-top: 20px;
+      margin-top: -2%;
     }
     #HomeSection .row1 h1 {
-      font-size: 13vw;
-      margin-left: 30%;
+      margin-left: 20%;
     }
-
-    .text {
-      margin-left: 2.3%;
-      font-size: 14px;
-      width: 220px;
-    }
-    .text1{
-      margin-left: 71%;
-      font-size: 14px;
-      width: 220px;
-    }
+    .home-content {
+      line-height: 97px;
+      margin-top: 40px;
+  }
     .box2 .about1 {
       margin-top: 9%;
     }
+}
+@media only screen and (max-width: 720px){
+
+}
+@media only screen and (max-width: 450px){
+  .vertical{
+    left: 9%;
+  }
+  .vertical1{
+    left: 6%;
+  }
+  .vertical2{
+    display: none;
+  }
+  .vertical3{
+    left: 50%;
+  }
+
+  .block {
+    width: 13px;
+  }
+  .block1{
+    left: 5.2%;
+    width: 7px;
+  }
+  .block2 {
+    left: 6.5%;
+    width: 13px;
+  }
+
+  .text1{
+    font-size: 1.5vw;
+  }
+  .text{
+    font-size: 1.5vw;
+    margin-left: 51%;
+    line-height: 2;
+  }
+
+  .home-content {
+    line-height: 40px;
+  }
+
+  .arrow svg {
+    height: 7vw;
+    margin-left: 6.5vw;
+  }
+
+  .navBar a {
+    margin-left: 35px;
+  }
+  .navBar {
+    left: -15.8%;
+    top: 12%;
+}
+
+#HomeSection .row h1 {
+  margin-left: 12%;
+}
 }

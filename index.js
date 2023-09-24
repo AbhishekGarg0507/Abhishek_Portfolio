@@ -80,8 +80,8 @@ function revealToSpan(){
 
 function valueSetter(){
     // gsap.set("#header",{ y:"-100%",opacity:0});
-    gsap.set(".home span .child",{ y:"100%"});
-    gsap.set(".home .arrow",{opacity:0})
+    gsap.set("#HomeSection span .child",{ y:"100%"});
+    gsap.set("#HomeSection .arrow",{opacity:0})
     }
     
 function loader(){
@@ -122,7 +122,7 @@ t1.from("#loader .child span",{
 function animateHome(){
     var tl = gsap.timeline();
 
-    tl.to(".home span .child",{
+    tl.to("#HomeSection span .child",{
         y:0,
         duration:1,
         ease:Circ.easeInOut
@@ -133,8 +133,7 @@ function animateHome(){
     //     opacity:1,
     //     ease:Power3.easeInOut
     // })
-    
-    .to(".home .arrow",{
+    .to("#HomeSection .arrow",{
         opacity:1,
         duration:1,
         // delay:5,
