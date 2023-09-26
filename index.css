@@ -144,7 +144,7 @@ html,body{
 
 .navBar{
   position: absolute;
-  top: 20%;
+  top: 12%;
   left: -8.8%;
   z-index: 222;
   rotate: -90deg;
@@ -273,6 +273,11 @@ path,polyline{
 }
 /* vertical line end */
 
+.box1 span{
+  padding-top: 50vw;
+  margin-left: 9%;
+}
+
 .box2{
   display: flex;
   padding-top: 5%;
@@ -286,9 +291,13 @@ path,polyline{
   margin-left: 2vw;
   width: 140vw;
   line-height: 30px;
-  margin-top: 9%;
+  margin-top: 5%;
 }
-
+.myself{
+  margin-bottom: 5%;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
 .box2 .about2{
   max-width: 62%;
   margin-left: 31%;
@@ -423,6 +432,7 @@ path,polyline{
     height: 30vw;
     width: 22vw;
     border-radius: 7%;
+    /* box-shadow: 5px 5px 20px rgb(116, 115, 115),-5px -5px 20px rgb(116, 115, 115) ; */
     transform: rotate(-18deg);
 }
 .img-container .img2{
@@ -430,11 +440,70 @@ path,polyline{
     height: 30vw;
     width: 22vw;
     border-radius: 7%;
+    /* box-shadow: 5px 5px 20px rgb(116, 115, 115),-5px -5px 20px rgb(116, 115, 115) ; */
     transform: rotate(-6deg) translate(30%, -90%);
 }
+/* ---------------------------------------------------------------------------------------------------  */
+/* ========================================skill section----------------------------------------------- */
+.skills-heading p{
+  font-size: 6vw;
+  color: #111;
+  text-transform: uppercase;
+  transform: translate(85px);
+}
+.skills-heading span{
+  color: #842029;
+  font-weight: 800;
+  font-size: 7vw;
+  font-family: 'Megrim', cursive;
+  font-family: 'Qwitcher Grypen', cursive;
+}
+.arrow2{
+  display: inline-block;
+  transform: translate(-100%, -100%);
+  /* margin-left: 9%; */
+  opacity: .3;
+}
+.arrow2 svg{
+  height: 3vw;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------Work SECTION --------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 #WorkSection{
   height: 100vh;
+}
+.workHeading{
+  display: flex;
+}
+.workHeading p{
+  display:inline-block;
+  /* padding:0 3vw; */
+  background-color: #dfd5a9;
+  /* border: 1px solid red; */
+  letter-spacing: 5px;
+  margin-left: -9%;
+  color: #111;
+  font-size: 6vw;
+  font-weight: 600;
+  margin-bottom: 10%;
+  text-transform: uppercase;
+}
+.workHeading span{
+  color: #842029;
+  font-size: 7vw;
+  font-family: 'Megrim', cursive;
+  font-family: 'Qwitcher Grypen', cursive;
+}
+ .arrow1{
+  display: inline-block;
+  transform: rotate(90deg) translate(0, -9vw);
+  margin-left: 9%;
+  opacity: .3;
+}
+.arrow1 svg{
+  height: 3vw;
 }
 .one{
   display: flex;
@@ -493,6 +562,15 @@ path,polyline{
 .c3{
   width: 25vw;
   margin-left: 4.7%;
+}
+
+#SkillsSection{
+  height: 100vh;
+}
+.shape11{
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
 }
 @keyframes scroll {
   0%{
