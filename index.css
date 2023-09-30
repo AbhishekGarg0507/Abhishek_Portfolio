@@ -737,11 +737,6 @@ path,polyline{
   margin-left: 4.7%;
 }
 
-.shape11{
-  height: 100px;
-  width: 100px;
-  border: 1px solid red;
-}
 @keyframes scroll {
   0%{
     transform: translateX(calc(-100% - 35px));
