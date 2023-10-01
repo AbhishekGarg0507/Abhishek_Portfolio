@@ -806,7 +806,13 @@ path,polyline{
     width: 22px;
     height: 40px;
   }
-
+  #topheading{
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  #loader h1{
+    left: 3%;
+  }
   .text1{
     font-size: 2vw;
     margin-left: 0;
@@ -845,6 +851,7 @@ path,polyline{
 }
 .home{
   background-color: black;
+  overflow: hidden;
 }
 #HomeSection .row h1 {
   margin-left: 12%;
@@ -892,7 +899,22 @@ background-color: #000000;
 background-color: black;
     color: #dfd5a9;
     margin-left: 78px;
-    width: 60vw;
+    width: 70vw;
     font-size: 8vw;
+  }
+  path,polyline{
+    stroke:#dfd5a9 ;
+  }
+  .arrow2 svg {
+    height: 8vw;
+  }
+  .arrow2{
+    transform: translate(9px, 12px);
+  }
+  .arrow1 svg {
+    height: 8vw;
+  }
+  .arrow1 {
+    transform: translate(284px, -70px) rotate(45deg);
   }
 }
