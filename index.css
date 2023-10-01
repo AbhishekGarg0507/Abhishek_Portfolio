@@ -811,7 +811,7 @@ path,polyline{
     font-size: 2vw;
     margin-left: 0;
     color: #dfd5a9;
-    width: 25vw;
+    width: 47vw;
     transform: translate(52vw, 57vw);
   }
   .text{
@@ -856,7 +856,7 @@ path,polyline{
 }
 .arrow{display: none;}
 .img-container{
-  transform: translate(-67%,23%);
+  transform: translate(-141%,23%);
 }
 .img-container img {
   height: 58vw;
@@ -868,8 +868,8 @@ path,polyline{
   margin-left: 42px;
   margin-top: 102vw;
 }
-#skillSection{
-  margin-top: 5%;
+#SkillsSection {
+  margin-top: 12%;
 }
 .skills-heading p {
   color: #dfd5a9;
@@ -879,4 +879,20 @@ background-color: #000000;
 .skill-logo{
   margin-top: 37%;
 }
+.box2 p{
+  margin-left: 5px;
+  width: 71vw;
+    line-height: 5vw;
+    font-size: 5vw;
+}
+.smalltextHeading {
+  font-size: .7rem;
+}
+.workHeading p {
+background-color: black;
+    color: #dfd5a9;
+    margin-left: 78px;
+    width: 60vw;
+    font-size: 8vw;
+  }
 }
