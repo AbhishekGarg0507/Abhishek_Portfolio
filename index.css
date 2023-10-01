@@ -35,7 +35,7 @@ html,body{
   position: absolute;
   top: 45%;
   /* left: 42%; */
-  font-size: 6vw;
+  font-size: 8vw;
   font-weight: 500;
   /* transform: translate(-50% -50%); */
 }
@@ -346,15 +346,15 @@ path,polyline{
   text-transform: uppercase;
   /* white-space: nowrap; */
 }
-.contact-content  .contact-text1 p{
+.contact-content  .contact-text1 span{
   font-size: 20px;
   line-height: 25px;
   text-align: end;
   color: #fff;
-  margin-right: 6%;
+  /* margin-right: 6%; */
   top: 20%;
   text-transform: uppercase;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 .contact-content  .contact-text1 a{
   text-decoration: none;
@@ -812,26 +812,28 @@ path,polyline{
   }
   #loader h1{
     left: 3%;
+    top: 35%;
+    font-size: 10vw;
   }
   .text1{
-    font-size: 2vw;
+    font-size: 2.6vw;
     margin-left: 0;
     color: #dfd5a9;
-    width: 47vw;
-    transform: translate(52vw, 57vw);
+    width: 34vw;
+    transform: translate(54vw, 73vw);
   }
   .text{
     color: #dfd5a9;
-    font-size: 2vw;
+    font-size: 2.6vw;
     margin-left: 0;
-    width: 25vw;
-    transform: translate(18vw, 50vw);
+    width: 36vw;
+    transform: translate(18vw, 65vw);
   }
 
   .home-content {
-    
+    margin-top: 17%;
     margin-left: 6%;
-    line-height: 40px;
+    line-height: 67px;
   }
 
   .arrow svg {
@@ -844,34 +846,37 @@ path,polyline{
     margin-left: 40px;
   }
   .navBar {
-    rotate: -1800deg;
-    left: 10%;
+    rotate: 360deg;
+    left: 21%;
     top: 2%;
     margin-top: 6px;
 }
 .home{
+  border: 10px solid #222;
   background-color: black;
   overflow: hidden;
 }
 #HomeSection .row h1 {
+  font-size: 51px;
   margin-left: 12%;
   color: #dfd5a9;
 }
 #HomeSection .row1 h1 {
+  font-size: 51px;
   margin-left: 12%;
   color: #dfd5a9;
 }
 .arrow{display: none;}
 .img-container{
-  transform: translate(-141%,23%);
+  transform: translate(-131%,14%);
 }
 .img-container img {
-  height: 58vw;
-  width: 40vw;
+  height: 73vw;
+  width: 50vw;
 }
 .box2 .about1{
   color: #dfd5a9;
-  line-height: 15px;
+  line-height: 47px;
   margin-left: 42px;
   margin-top: 102vw;
 }
@@ -889,10 +894,11 @@ background-color: #000000;
 .box2 p{
   margin-left: 5px;
   width: 71vw;
-    line-height: 5vw;
+    line-height: 5.5vw;
     font-size: 5vw;
 }
 .smalltextHeading {
+  margin-left: 2vw;
   font-size: .7rem;
 }
 .workHeading p {
@@ -917,4 +923,8 @@ background-color: black;
   .arrow1 {
     transform: translate(284px, -70px) rotate(45deg);
   }
+  #ContactSection {
+    background-color: #222;
+  }
+  
 }
