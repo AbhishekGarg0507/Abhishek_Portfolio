@@ -272,15 +272,10 @@ path,polyline{
   left: 9%;
 }
 /* vertical line end */
-
-.box1 span{
-  padding-top: 50vw;
-  margin-left: 9%;
-}
-
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------- About section----------------------------------------------- */
 .box2{
   display: flex;
-  padding-top: 5%;
   padding-left: 7%;
 }
 .box2 p{
@@ -299,12 +294,40 @@ path,polyline{
   opacity: 0.5;
   text-transform: uppercase;
 }
-.box2 .about2{
-  max-width: 62%;
-  margin-left: 31%;
-  line-height: 30px;
-  margin-top: 5%;
+.img-container{
+  height: 100%;
+  width: 100%;
+  transform: translate(-2%,-7%);
 }
+.img-container img{
+    height: 33vw;
+    width: 25vw;
+    border-radius: 7%;
+    background-size: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all ease-in-out .5s;
+}
+.img-container .img1{
+    transform: rotate(-22deg);
+    background-image: url(20191213_183343~1.jpg); 
+}
+.img-container .img1:hover{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+.img-container .img2{
+    background-image: url(20191213_183343~1.jpg);
+    transform: rotate(-6deg) translate(36%, -93%);
+}
+.img-container .img2:hover{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+/* ============================================================================================================================== */
+/* ============================================          Contact Section      =================================================== */
+
 #ContactSection{
   background-color: #111;
   /* z-index: 999999999; */
@@ -409,7 +432,6 @@ path,polyline{
   margin-left:74%;
   padding: 5px;
   color: white;
-  /* font-size: 1vw; */
   border-radius: 5px;
   background-color: #842029;
   border: #842029;
@@ -421,50 +443,12 @@ path,polyline{
   color: #ffffff;
 }
 
-.img-container{
-  height: 100%;
-  width: 100%;
-  margin-left: 7%;
-  transform: translate(0%,-7%);
-  /* background-color: red; */
-}
-.img-container .img1{
-  background-color: blue;
-    height: 30vw;
-    width: 22vw;
-    border-radius: 7%;
-    background-size: cover;
-    /* box-shadow: 5px 5px 20px rgb(116, 115, 115),-5px -5px 20px rgb(116, 115, 115) ; */
-    transform: rotate(-18deg);
-    background-image: url(20191213_183343~1.jpg);
-    filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: all ease-in-out .5s;
-    
-}
-.img-container .img1:hover{
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-}
-.img-container .img2{
-  background-color: green;
-    height: 30vw;
-    width: 22vw;
-    border-radius: 7%;
-    /* box-shadow: 5px 5px 20px rgb(116, 115, 115),-5px -5px 20px rgb(116, 115, 115) ; */
-    background-image: url(20191213_183343~1.jpg);
-    background-size:cover;
-    transform: rotate(-6deg) translate(30%, -90%);
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    transition: all ease-in-out .5s;
-}
-.img-container .img2:hover{
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-}
+
 /* ---------------------------------------------------------------------------------------------------  */
 /* ========================================skill section----------------------------------------------- */
+#SkillsSection{
+  margin-top: -30%;
+}
 .skills-heading p{
   font-size: 6vw;
   font-weight: 600;
@@ -484,8 +468,6 @@ path,polyline{
 .arrow2{
   display: inline-block;
   transform: translate(-100%, -100%) rotate(45deg);
-
-  /* margin-left: 9%; */
   opacity: .5;
 }
 .arrow2 svg{
@@ -503,7 +485,6 @@ path,polyline{
   display: flex;
 }
 .lower{
-  
   border-radius: 10px;
   box-shadow: inset 2px 2px 5px #000000ad ,inset -2px -2px 5px #000000ad;
   background-color: #842029;
@@ -514,6 +495,10 @@ path,polyline{
   border-radius: 10px;
   background-color: #dfd5a9;
 }
+.upper img:hover
+{
+  scale: 2;
+}
 .logo{
   overflow: hidden;
   height: 100%;
@@ -523,28 +508,44 @@ path,polyline{
 }
 .one-upper img{
   height: 125px;
+  transition: all ease-in 1s;
 }
 .two-upper img{
   height: 190px;
-}.three-upper img{
+  transition: all ease-in 1s;
+}
+.three-upper img{
   height: 66px;
   margin: 7px;
-}.four-upper img{
+  transition: all ease-in 1s;
+}
+.four-upper img{
   height: 94px;
-}.five-upper img{
+  transition: all ease-in 1s;
+}
+.five-upper img{
   margin: 8px;
   height: 107px;
   margin-top: 15px;
-}.six-upper img{
+  transition: all ease-in 1s;
+}
+.six-upper img{
+  transition: all ease-in 1s;
   height: 140px;
   margin-top: 10px;
-}.seven-upper img{
+}
+.seven-upper img{
+  transition: all ease-in 1s;
   height: 95px;
   margin-top: 8px;
-}.eight-upper img{
+}
+.eight-upper img{
+  transition: all ease-in 1s; 
   height: 110px;
   margin-top: 8px;
-}.nine-upper img{
+}
+.nine-upper img{
+  transition: all ease-in 1s;
   height: 131px;
   margin-top: 6px;
 }
@@ -652,11 +653,9 @@ path,polyline{
 }
 .workHeading p{
   display:inline-block;
-  /* padding:0 3vw; */
   background-color: #dfd5a9;
-  /* border: 1px solid red; */
   letter-spacing: 5px;
-  margin-left: -9%;
+  margin-left: -6%;
   color: #111;
   font-size: 6vw;
   font-weight: 600;
@@ -671,12 +670,8 @@ path,polyline{
 }
  .arrow1{
   display: inline-block;
-  transform: rotate(90deg) translate(0, -9vw);
-  margin-left: 9%;
-  opacity: .3;
-}
-.arrow1 svg{
-  height: 3vw;
+  transform: rotate(90deg) translate(20px, -8vw);
+  opacity: .2;
 }
 .one{
   display: flex;
@@ -786,40 +781,50 @@ path,polyline{
 }
 @media only screen and (max-width: 450px){
   .vertical{
-    left: 9%;
+    left: 15%;
   }
   .vertical1{
-    left: 6%;
-  }
-  .vertical2{
-    display: none;
+    left: 9%;
   }
   .vertical3{
-    left: 50%;
+    border: 0;
   }
-
+  .vertical2{
+    left: 55%;
+  }
   .block {
-    width: 13px;
+    width: 23px;
+    height: 40px;
   }
   .block1{
-    left: 5.2%;
+    left: 8.2%;
     width: 7px;
+    height: 20px;
   }
   .block2 {
-    left: 6.5%;
-    width: 13px;
+    left: 9.5%;
+    width: 22px;
+    height: 40px;
   }
 
   .text1{
-    font-size: 1.5vw;
+    font-size: 2vw;
+    margin-left: 0;
+    color: #dfd5a9;
+    width: 25vw;
+    transform: translate(52vw, 57vw);
   }
   .text{
-    font-size: 1.5vw;
-    margin-left: 51%;
-    line-height: 2;
+    color: #dfd5a9;
+    font-size: 2vw;
+    margin-left: 0;
+    width: 25vw;
+    transform: translate(18vw, 50vw);
   }
 
   .home-content {
+    
+    margin-left: 6%;
     line-height: 40px;
   }
 
@@ -829,14 +834,49 @@ path,polyline{
   }
 
   .navBar a {
-    margin-left: 35px;
+    font-size: 3.3vw;
+    margin-left: 40px;
   }
   .navBar {
-    left: -15.8%;
-    top: 12%;
+    rotate: -1800deg;
+    left: 10%;
+    top: 2%;
+    margin-top: 6px;
 }
-
+.home{
+  background-color: black;
+}
 #HomeSection .row h1 {
   margin-left: 12%;
+  color: #dfd5a9;
+}
+#HomeSection .row1 h1 {
+  margin-left: 12%;
+  color: #dfd5a9;
+}
+.arrow{display: none;}
+.img-container{
+  transform: translate(-67%,23%);
+}
+.img-container img {
+  height: 58vw;
+  width: 40vw;
+}
+.box2 .about1{
+  color: #dfd5a9;
+  line-height: 15px;
+  margin-left: 42px;
+  margin-top: 102vw;
+}
+#skillSection{
+  margin-top: 5%;
+}
+.skills-heading p {
+  color: #dfd5a9;
+background-color: #000000;
+  transform: translate(22px);
+}
+.skill-logo{
+  margin-top: 37%;
 }
 }
