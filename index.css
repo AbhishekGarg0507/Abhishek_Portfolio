@@ -646,7 +646,9 @@ path,polyline{
 /* ---------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------Work SECTION --------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
-
+#WorkSection{
+  margin-bottom: 5%;
+}
 .workHeading{
   margin-top: 5%;
   display: flex;
@@ -659,7 +661,7 @@ path,polyline{
   color: #111;
   font-size: 6vw;
   font-weight: 600;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
   text-transform: uppercase;
 }
 .workHeading span{
@@ -850,20 +852,24 @@ path,polyline{
 }
 /* ======================================================================================================================================= */
 /* ==================================================Certificate and Qualification ======================================================= */
+.headingQ{
+  margin-bottom: 5%;
+}
 .headingQ p{
   letter-spacing: 5px;
   margin-left: 9%;
   color: #111;
-  font-size: 4vw;
+  font-size: 5vw;
+  letter-spacing: 10px;
   font-weight: 600;
-  margin-bottom: 3%;
+  /* margin-bottom: 3%; */
   text-transform: uppercase;
 }
 
 .headingQ span{
   color: #842029;
-  font-size: 6vw;
-  font-weight: 700;
+  font-size: 7vw;
+  padding: 0 10px;
   font-family: 'Megrim', cursive;
   font-family: 'Qwitcher Grypen', cursive;
 }
@@ -1085,7 +1091,54 @@ background-color: black;
   #ContactSection {
     background-color: #222;
   }
-  
+  /* =========================================== qualification ============================================ */
+
+  .card-group{
+    flex-direction: column;
+  }
+  .card:nth-child(1){
+    height: 50vw;
+    width: 50vw;
+    margin-left: 20%;
+  }
+  .card:nth-child(2){
+    height: 50vw;
+    width: 50vw;
+    margin-left: 39%;
+  }
+  .card:nth-child(3){
+    height: 50vw;
+    width: 50vw;
+    margin-left: 20%;
+  }
+
+  .title{
+    transform: translateY(-10.5vw);
+  }
+  .arrowWork svg {
+    height: 5vw;
+    width: 9vw;
+    transform: translate(-8px , -2px);
+  }
+  .arrowWork{
+    height: 8.5vw;
+    width: 8.5vw;
+    transform: translateY(-10.5vw);
+  }
+
+  .headingQ p {
+    margin-left: 20%;
+    color: #dfd5a9;
+  }
+  .certificate{
+    flex-direction: column;
+    text-align: end;
+    color: #dfd5a9;
+    padding-right: 1%;
+    margin: 4vw 11vw;
+    border-top: 1px solid;
+  }
+
 }
 
 
