@@ -1123,6 +1123,9 @@ background-color: black;
     width: 9vw;
     transform: translate(-8px , -2px);
   }
+  .arrowWork path{
+    stroke: #000000;
+  }
   .arrowWork{
     height: 8.5vw;
     width: 8.5vw;
