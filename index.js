@@ -77,6 +77,21 @@ function revealToSpan(){
         elem.appendChild(spanParent);
     })
     }
+function cardShow(){
+    var showingImage;
+    document.querySelectorAll(".work")
+    .forEach( function(work){ 
+        work.addEventListener("mousemove",function(dets){
+            document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity = 1;
+            showingImage = dets.target;
+            document.querySelector("#cursor").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`;
+            
+        })
+        work.addEventListener("mouseleave",function(dets){
+            document.querySelector("#cursor").children[showingImage.dataset.index].style.opacity = 0;
+        })
+    })
+}
 
 function valueSetter(){
     // gsap.set("#header",{ y:"-100%",opacity:0});
@@ -144,3 +159,4 @@ function animateHome(){
 revealToSpan();
 valueSetter();
 loader();
+cardShow();

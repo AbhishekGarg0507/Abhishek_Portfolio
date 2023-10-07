@@ -714,32 +714,143 @@ path,polyline{
   /* margin-left: 5%; */
 }
 .card-group .card{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 25vw;
   border-radius: 10px;
   justify-content: space-between;
 }
-.c1{
+.card:nth-child(1){
   width: 23.3vw;
   margin-left: 9%;
 }
-.c2{
+.card:nth-child(2){
   width: 25vw;
   margin-left: 4.8%;
 }
-.c3{
+.card:nth-child(3){
   width: 25vw;
   margin-left: 4.7%;
 }
-
-@keyframes scroll {
-  0%{
-    transform: translateX(calc(-100% - 35px));
-  }
-  100%{
-    transform: translateX(0);
-  }
+.card{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  /* position: absolute; */
+  background: #000000;
+  box-shadow: inset 2px 2px 5px #2e0b0e, inset -2px -2px 5px #2e0b0e;
+  /* z-index: 5; */
 }
+.work{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: #000000;
+  opacity: .8;
+
+}
+.projectText{
+  display: flex;
+}
+.title{
+  background-color: #fff;
+  font-weight: 800;
+  padding: .8vw 1vw;
+  border-radius: 100px;
+  width: 60%;
+  /* height: fit-content; */
+  margin-left: 5%;
+  transform: translateY(-4.5vw);
+}
+.arrowWork{
+  transform: translateY(-4.5vw);
+  margin-left: 7%;
+  width: 3.5vw;
+  height: 3.5vw;
+  background: #fff;
+  border-radius: 50%;
+}
+.arrowWork svg{
+  height: 2vw;
+  width: 4vw;
+  rotate: -90deg;
+  transform: translate(-8px , -2px);
+  
+}
+.arrowWork path{
+  stroke-width: 3px;
+}
+.work img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+ #cursor{
+  position: fixed;
+  width: 10vw;
+  top:0;
+  z-index: 999999;
+ }
+ #cursor > div{
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+  opacity: 0;
+  position: absolute;
+ }
+ #elem{
+  width: 100%;
+  position: relative;
+ }
+ .crow{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: .7vw;
+ }
+ .crow .circle{
+  width: 2vw;
+  height: 2vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+ }
+ .crow .capsule{
+  padding: .2vw 2vw;
+  border-radius: 100px;
+  background-color: #fff;
+}
+#elem img{
+  width: 100%;
+  opacity: 0;
+  margin-top: 11%;
+  border-radius: 10px;
+  animation: an 5s linear infinite;
+  position: absolute;
+}
+
+#elem img:nth-child(2){
+  animation-delay: 1s;
+}
+#elem img:nth-child(3){
+  animation-delay: 2s;
+}
+#elem img:nth-child(4){
+  animation-delay: 3s;
+}
+#elem img:nth-child(5){
+  animation-delay: 4s;
+}
+
+@keyframes an{
+  0%{opacity: 1;}
+  20%{opacity: 1;}
+  21%{opacity: 0;}
+  40%{opacity: 0;}
+  60%{opacity: 0;}
+  80%{opacity: 0;}
+  100%{opacity: 0;}
+}
+/* ======================================================================================================================================= */
+/* ==================================================Responsive Start Here    ============================================================ */
+/* ======================================================================================================================================= */
 @media only screen and (max-width: 1023px){
 
 }
@@ -928,3 +1039,5 @@ background-color: black;
   }
   
 }
+
+
