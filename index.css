@@ -945,6 +945,7 @@ path,polyline{
 
 }
 @media only screen and (max-width: 450px){
+  /* ================================Lines and logo div ============================================== */
   .vertical{
     left: 15%;
   }
@@ -971,6 +972,7 @@ path,polyline{
     width: 21px;
     height: 40px;
   }
+  /* =============================================loader============================================ */
   #topheading{
     left: 50%;
     transform: translate(-50%,0);
@@ -980,6 +982,7 @@ path,polyline{
     top: 35%;
     font-size: 10vw;
   }
+  /* ===========================================Home Section=========================================== */
   .text1{
     font-size: 2.6vw;
     margin-left: 0;
@@ -1031,6 +1034,7 @@ path,polyline{
   margin-left: 11%;
   color: #dfd5a9;
 }
+/* ====================================about section=-================================================= */
 .arrow{display: none;}
 .img-container{
   transform: translate(-131%,14%);
@@ -1045,6 +1049,7 @@ path,polyline{
   margin-left: 42px;
   margin-top: 102vw;
 }
+/* =================================skill section======================================================== */
 #SkillsSection {
   margin-top: 12%;
 }
@@ -1150,7 +1155,49 @@ background-color: black;
     margin: 6vw 11vw;
     border-top: 1px solid;
   }
+  /* ==========================================contact section========================================== */
+  .contact-content{
+    padding-bottom: 18%;
+  }
+  .backtotop{
+    bottom: 10vw;
+    left: -8.5vw;
+  }
+  .blockBottom{
+    left: 3%;
+    width: 12vw;
+    height: 9vw;
+    bottom: 30px;
+  }
+  .contact-text1{
+    text-align: end;
+    width: 63%;
+    margin-left: 29%;
+  }
+  .contact-content .contact-text{
+    margin-left: 13%;
+    line-height: 45px;
+  }
+  .contact-content .contact-text2{
+    font-size: 18px;
+    margin-left: 13%;
+  }
 
+  .contactForm input{
+    height: 40px;
+  }
+  .contactForm textarea{
+    height: 80px;
+  }
+  .contactForm button{
+    margin-top: 5%;
+    margin-left: 66%;
+  }
+  .contactForm{
+    margin-left: 16%;
+    width: 74%;
+    margin-top: 13%;
+  }
 }
 
 
