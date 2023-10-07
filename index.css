@@ -849,6 +849,54 @@ path,polyline{
   100%{opacity: 0;}
 }
 /* ======================================================================================================================================= */
+/* ==================================================Certificate and Qualification ======================================================= */
+.headingQ p{
+  letter-spacing: 5px;
+  margin-left: 9%;
+  color: #111;
+  font-size: 4vw;
+  font-weight: 600;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+}
+
+.headingQ span{
+  color: #842029;
+  font-size: 6vw;
+  font-weight: 700;
+  font-family: 'Megrim', cursive;
+  font-family: 'Qwitcher Grypen', cursive;
+}
+.certificate{
+  padding-top:5px ;
+  display: flex;
+  text-align: center;
+  margin-left: 2%;
+  margin: 1vw 11vw;
+  border-top: 2px solid ;
+  justify-content: space-between;
+}
+
+.cNo{
+  padding-left: 1vw;
+}
+#cursorQ{
+  position: fixed;
+  width: 10vw;
+  top:0;
+  z-index: 999999;
+ }
+ #cursorQ > div{
+  /* transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s; */
+  opacity: 0;
+  position: absolute;
+ }
+
+ #cursorQ img{
+  width: 100%;
+  border-radius: 10px;
+ }
+/* ======================================================================================================================================= */
 /* ==================================================Responsive Start Here    ============================================================ */
 /* ======================================================================================================================================= */
 @media only screen and (max-width: 1023px){

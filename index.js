@@ -92,6 +92,19 @@ function cardShow(){
         })
     })
 }
+function certificateShow(){
+    var show;
+    document.querySelectorAll(".certificate").forEach(function(certificate){
+        certificate.addEventListener("mousemove",function(dets){
+            document.querySelector("#cursorQ").children[dets.target.dataset.index].style.opacity = 1;
+            show = dets.target;
+            document.querySelector("#cursorQ").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`;
+        })
+        certificate.addEventListener("mouseleave",function(dets){
+             document.querySelector("#cursorQ").children[show.dataset.index].style.opacity = 0;
+        })
+    })
+}
 
 function valueSetter(){
     // gsap.set("#header",{ y:"-100%",opacity:0});
@@ -160,3 +173,4 @@ revealToSpan();
 valueSetter();
 loader();
 cardShow();
+certificateShow();
