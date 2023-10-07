@@ -341,7 +341,7 @@ path,polyline{
   font-weight: 700;
   line-height: 120px;
   /* margin-top: -240px; */
-  color: #ffffff;
+  color: #dfd5a9;
   z-index: 1;
   text-transform: uppercase;
   /* white-space: nowrap; */
@@ -350,7 +350,7 @@ path,polyline{
   font-size: 20px;
   line-height: 25px;
   text-align: end;
-  color: #fff;
+  color: #dfd5a9;
   /* margin-right: 6%; */
   top: 20%;
   text-transform: uppercase;
@@ -358,7 +358,7 @@ path,polyline{
 }
 .contact-content  .contact-text1 a{
   text-decoration: none;
-  color: #fff;
+  color: #dfd5a9;
 }
 .contact-content  .contact-text1 a:hover{
   color:#842029;
@@ -368,7 +368,7 @@ path,polyline{
   font-size: 30px;
   line-height: 30px;
   width: 80%;
-  color: #fff;
+  color: #dfd5a9;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -399,7 +399,7 @@ path,polyline{
   height: 200px;
   width: 31%;
   display: inline-block;
-  color: rgb(255, 255, 255);
+  color: #dfd5a9;
   margin-top: -10%;
   margin-left: 64%;
   /* background-color: white; */
@@ -407,11 +407,11 @@ path,polyline{
 .contactForm input{
   width: 90%;
   margin-top: 5px;
-  color: #fff;
+  color: #dfd5a9;
   padding-left: 10px;
   background-color: transparent;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid #dfd5a9;
   height: 3vw;
 }
 
@@ -419,10 +419,10 @@ path,polyline{
   width: 90%;
   border-radius: 5px;
   margin-top: 5px;
-  color: #fff;
+  color: #dfd5a9;
   padding: 10px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #dfd5a9;
   height: 5vw;
 }
 
@@ -431,7 +431,7 @@ path,polyline{
   height: fit-content;
   margin-left:74%;
   padding: 5px;
-  color: white;
+  color: #dfd5a9;
   border-radius: 5px;
   background-color: #842029;
   border: #842029;
@@ -439,8 +439,8 @@ path,polyline{
 }
 .contactForm button:hover{
   background-color: transparent;
-  border: 1px solid white;
-  color: #ffffff;
+  border: 1px solid #dfd5a9;
+  color: #dfd5a9;
 }
 
 
