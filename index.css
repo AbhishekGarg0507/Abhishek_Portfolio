@@ -955,10 +955,10 @@ path,polyline{
     border: 0;
   }
   .vertical2{
-    left: 55%;
+    border: 0;
   }
   .block {
-    width: 23px;
+    width: 21px;
     height: 40px;
   }
   .block1{
@@ -967,8 +967,8 @@ path,polyline{
     height: 20px;
   }
   .block2 {
-    left: 9.5%;
-    width: 22px;
+    left: 9.6%;
+    width: 21px;
     height: 40px;
   }
   #topheading{
@@ -985,14 +985,14 @@ path,polyline{
     margin-left: 0;
     color: #dfd5a9;
     width: 34vw;
-    transform: translate(54vw, 73vw);
+    transform: translate(54vw, 77vw);
   }
   .text{
     color: #dfd5a9;
     font-size: 2.6vw;
     margin-left: 0;
     width: 36vw;
-    transform: translate(18vw, 65vw);
+    transform: translate(18vw, 68vw);
   }
 
   .home-content {
@@ -1007,12 +1007,12 @@ path,polyline{
   }
 
   .navBar a {
-    font-size: 3.3vw;
-    margin-left: 40px;
+    font-size: 5vw;
+    margin-left: 22px;
   }
   .navBar {
     rotate: 360deg;
-    left: 21%;
+    left: 17%;
     top: 2%;
     margin-top: 6px;
 }
@@ -1022,13 +1022,13 @@ path,polyline{
   overflow: hidden;
 }
 #HomeSection .row h1 {
-  font-size: 51px;
-  margin-left: 12%;
+  font-size: 44px;
+  margin-left: 11%;
   color: #dfd5a9;
 }
 #HomeSection .row1 h1 {
-  font-size: 51px;
-  margin-left: 12%;
+  font-size: 44px;
+  margin-left: 11%;
   color: #dfd5a9;
 }
 .arrow{display: none;}
@@ -1086,7 +1086,7 @@ background-color: black;
     height: 8vw;
   }
   .arrow1 {
-    transform: translate(284px, -70px) rotate(45deg);
+    transform: translate(242px, -24px) rotate(45deg);
   }
   #ContactSection {
     background-color: #222;
@@ -1095,6 +1095,9 @@ background-color: black;
 
   .card-group{
     flex-direction: column;
+  }
+  .card{
+    margin-bottom: 6%;
   }
   .card:nth-child(1){
     height: 50vw;
@@ -1125,17 +1128,23 @@ background-color: black;
     width: 8.5vw;
     transform: translateY(-10.5vw);
   }
-
+  .one{
+    opacity: 0;
+  }
   .headingQ p {
     margin-left: 20%;
     color: #dfd5a9;
+    letter-spacing: 4px;
+  }
+  .Qwrapper{
+    margin-left: 9%;
   }
   .certificate{
     flex-direction: column;
     text-align: end;
     color: #dfd5a9;
     padding-right: 1%;
-    margin: 4vw 11vw;
+    margin: 6vw 11vw;
     border-top: 1px solid;
   }
 
