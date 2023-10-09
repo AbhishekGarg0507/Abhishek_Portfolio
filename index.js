@@ -85,10 +85,15 @@ function cardShow(){
             document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity = 1;
             showingImage = dets.target;
             document.querySelector("#cursor").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`;
-            
+            showingImage.style.filter = "grayscale(1)";
+
+            document.querySelector(".home").style.backgroundColor = dets.target.dataset.color;  
         })
         work.addEventListener("mouseleave",function(dets){
             document.querySelector("#cursor").children[showingImage.dataset.index].style.opacity = 0;
+            showingImage.style.filter = "grayscale(0)";
+
+            document.querySelector(".home").style.backgroundColor ="#dfd5a9";
         })
     })
 }
@@ -99,6 +104,7 @@ function certificateShow(){
             document.querySelector("#cursorQ").children[dets.target.dataset.index].style.opacity = 1;
             show = dets.target;
             document.querySelector("#cursorQ").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`;
+            
         })
         certificate.addEventListener("mouseleave",function(dets){
              document.querySelector("#cursorQ").children[show.dataset.index].style.opacity = 0;
